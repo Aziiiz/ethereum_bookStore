@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Submit form</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/scrolling-nav.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Sell page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/history">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#page-top">Sell</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-primary text-white">
+      <div class="container text-center">
+        <h1>Upload your book to sell</h1>
+        <p class="lead">fully decentralized online store</p>
+      </div>
+    </header>
+
+    <div class="container">
+     <form id="uploadForm" class="well form-horizontal" action="/api/post"   enctype="multipart/form-data">
+       <fieldset>
+
+<label class="switch">
+<input type="checkbox">
+<span class="slider round"></span>
+</label>
+         <div class="form-group">
+           <label class="col-md-4 control-label"></label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="bookName"  name="first_name" placeholder="Book name" class="form-control"  type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <span class="glyphicon glyphicon-cloud-upload"></span>
+                    <h5>Upload preview</h5>
+
+                    <div class="progress2">
+                      <div class="progress-preview" role="progressbar3"></div>
+                    </div>
+                    <button class="btn btn-lg upload-btn1" type="button">Upload File</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input id="upload-preview" type="file" name="upload" >
+            <input type="text" name="prevHash" id="prevHash" value="">
+
+  </div>
+
+<!-- Text input-->
+  <div class="input-group" id="boo">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <span class="glyphicon glyphicon-cloud-upload"></span>
+              <h5>Upload book</h5>
+
+              <div class="progress1">
+                <div class="progress-book" role="progressbar2"></div>
+              </div>
+              <button class="btn btn-lg upload-btn2" type="button">Upload File</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <input id="upload-book" type="file" name="upload1" >
+        <input type="text" id="dataHash" name="dataHash" value="">
+  </div>
+
+  <div class="input-group">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <span class="glyphicon glyphicon-cloud-upload"></span>
+              <h5>Upload Cover</h5>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"></div>
+              </div>
+              <button class="btn btn-lg upload-btn" type="button">Upload File</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <input id="upload-input" type="file" name="uploads">
+      <input type="text" id="ipfsHash" name="ipfsHash" value="">
+
+  </div>
+
+
+  <div class="form-group">
+    <label class="col-md-4 control-label"></label>
+     <div class="col-md-4 inputGroupContainer">
+       <div class="input-group">
+         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+         <input id="price"  name="price" placeholder="Price in Ether" class="form-control"  type="text">
+       </div>
+     </div>
+   </div>
+
+  <div class="form-group">
+    <label class="col-md-4 control-label"></label>
+      <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea id="desc" class="form-control" name="comment" placeholder="About book.."></textarea>
+        </div>
+      </div>
+  </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+            <div class="col-md-4">
+              <button id="btnSubmit" type="button" onclick="setvalue()" class="btn btn-warning">Submit <span class="glyphicon glyphicon-send"></span></button>
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+    </div>
+
+  </div>
+
+    <script src="/javascripts/web3.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+    <script src="/javascripts/address.js" type="text/javascript"></script>
+    <script src="/javascripts/upload.js"></script>
+    <script src="/javascripts/deploy.js"></script>
+
+  </body>
+</html>
