@@ -28,20 +28,20 @@ node -v
 
 === Install 
 
- Then let's clone this repository. Open a terminal, cd into the directory where you store your projects, and run the following command:
+Then let's clone this repository. Open a terminal, cd into the directory where you store your projects, and run the following command:
 [source, shell]
 git clone https://github.com/Aziiiz/ethereum_bookStore.git
 
- Next, cd into ethereum_bookStore
+Next, cd into ethereum_bookStore
 [source, shell]
 cd ethereum_bookStore
 
 
-== Install dependencies
+Install dependencies
 [source, shell]
 npm install
 
-== We're ready to start the web server. In a new terminal, run:
+We're ready to start the web server. In a new terminal, run:
 [source, shell]
 node app.js
 
