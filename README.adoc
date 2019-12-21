@@ -43,7 +43,7 @@ npm install
 
 We're ready to start the web server. In a new terminal, run:
 [source, shell]
-node app.js
+npm start
 
 
 === Obtaining ethers
