@@ -1,4 +1,4 @@
-# ethereum_bookStore= Polkadot
+# ethereum_bookStore
 
 
 Simple online book store running fully on ethereum blochain. mainly user can upload used books to sell or can buy books from other users.
