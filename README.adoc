@@ -10,7 +10,7 @@ There are mainly two smart contracts for selling paperback book and pdf books.
 if you'd like to play with source code , firstly you will need to install ipfs to your machine
 https://dist.ipfs.io/#go-ipfs go and download ipfs into your machine  
 https://docs.ipfs.io/introduction/usage/ follow this doc for installing ipfs
-== run ipfs on terminal
+=== Run ipfs on terminal
 [source, shell]
 ipfs daemon
 
@@ -41,7 +41,7 @@ Install dependencies
 [source, shell]
 npm install
 
-We're ready to start the web server. In a new terminal, run:
+We're ready to start the web server. In a terminal, run:
 [source, shell]
 npm start
 
