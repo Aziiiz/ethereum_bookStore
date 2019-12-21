@@ -1,8 +1,8 @@
 # ethereum_bookStore
 
 
-Simple online book store running fully on Ethereum blockchain(https://ethereum.org/). mainly user can upload used books to sell or can buy books from other users.
-There mainly two smart contracts for selling paperback book and pdf books. 
+Simple online book store running fully on Ethereum blockchain(https://ethereum.org/). Mainly user can upload pdf books to sell or can buy books from other users.
+There are mainly two smart contracts for selling paperback book and pdf books. 
 
 == To play 
 
