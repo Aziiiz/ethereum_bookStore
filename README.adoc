@@ -16,27 +16,30 @@ ipfs daemon
 
 
 === Install metamask to your chrome browser:
-https://metamask.io/ . After installing metamsak, create your ethereum address and set network to ropsten on metamask.
+https://metamask.io/ . After installing metamask, create your ethereum address and set network to ropsten.
 
 
 === Install Node.js 
 https://nodejs.org/en/
 
-=== check node.js is installed
+=== Check node.js is installed
 [source, shell]
 node -v
 
 
-=== clone repo
+=== Clone repo
 [source, shell]
 git clone https://github.com/Aziiiz/ethereum_bookStore.git
+
+[source, shell]
+cd ethereum_bookStore
 
 
 == Install dependencies
 [source, shell]
 npm install
 
-== You can start a development
+== You can start run 
 [source, shell]
 node app.js
 
