@@ -22,6 +22,9 @@ https://metamask.io/ . After installing metamsak, create your ethereum address a
 === Install Node.js 
 https://nodejs.org/en/
 
+=== check node.js is installed
+[source, shell]
+node -v
 
 
 === clone repo
